@@ -1,0 +1,14 @@
+{
+  "name": "ai-engineer-workflow",
+  "owner": {
+    "name": "Xapollon430",
+    "url": "https://github.com/Xapollon430"
+  },
+  "plugins": [
+    {
+      "name": "ai-engineer-workflow",
+      "source": "./",
+      "description": "Skills, commands, and a tone hook for an opinionated AI-assisted engineering workflow."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "ai-engineer-workflow",
+  "version": "0.1.0",
+  "description": "Skills, commands, and a SessionStart tone hook for an opinionated AI-assisted engineering workflow.",
+  "author": {
+    "name": "Xapollon430",
+    "url": "https://github.com/Xapollon430"
+  },
+  "skills": [
+    "./skills/sdd",
+    "./skills/to-prd",
+    "./skills/grill-me",
+    "./skills/handoff"
+  ]
+}
