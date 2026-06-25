@@ -1,6 +1,6 @@
 ---
-name: sdd
-description: Spec-driven development. Use when starting a non-trivial feature or change and you want a written contract before code. Drives the conversation to produce a single spec.md the agent can later implement against (see /implement).
+name: skill-sdd
+description: Spec-driven development. Use when starting a non-trivial feature or change and you want a written contract before code. Drives the conversation to produce a single spec.md the agent can later implement against (see /action-implement).
 disable-model-invocation: true
 ---
 
@@ -47,10 +47,10 @@ Show the file. Ask once: "anything wrong or missing?" Edit in place based on the
 
 ### 4. Stop
 
-Implementation is `/implement`'s job. The spec is the handoff.
+Implementation is `/action-implement`'s job. The spec is the handoff.
 
 ## Principles
 
 - The spec is human-readable, not pseudo-code. If you're writing function signatures, you've gone too far.
 - One spec per feature. Don't grow specs across unrelated work.
-- The spec is the living contract — `/implement` will update it in place as decisions get refined during the build.
+- The spec is the living contract — `/action-implement` will update it in place as decisions get refined during the build.

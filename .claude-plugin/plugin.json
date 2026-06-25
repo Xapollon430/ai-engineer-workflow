@@ -7,10 +7,10 @@
     "url": "https://github.com/Xapollon430"
   },
   "skills": [
-    "./skills/sdd",
-    "./skills/to-prd",
-    "./skills/grill-me",
-    "./skills/handoff",
+    "./skills/skill-sdd",
+    "./skills/skill-to-prd",
+    "./skills/skill-grill-me",
+    "./skills/skill-handoff",
     "./skills/skill-creator"
   ]
 }

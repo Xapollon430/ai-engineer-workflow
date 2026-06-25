@@ -14,7 +14,7 @@ Look for, in order:
 
 If multiple plausible candidates exist, list them and ask the user which one to implement against.
 
-If none exists, tell the user — they probably want to run `sdd` or `to-prd` first.
+If none exists, tell the user — they probably want to run `skill-sdd` or `skill-to-prd` first.
 
 ## 2. Create the worktree
 
