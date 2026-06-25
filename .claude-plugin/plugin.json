@@ -11,6 +11,7 @@
     "./skills/skill-to-prd",
     "./skills/skill-grill-me",
     "./skills/skill-handoff",
+    "./skills/skill-debug",
     "./skills/skill-creator"
   ]
 }

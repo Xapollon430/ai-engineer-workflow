@@ -23,6 +23,7 @@ All skills are prefixed with `skill-` for easy discovery.
 | `skill-to-prd`    | You've already discussed a feature and want it written up as a PRD.                 |
 | `skill-grill-me`  | You want a plan stress-tested before building.                                      |
 | `skill-handoff`   | You want to compact a conversation for a fresh agent to pick up.                    |
+| `skill-debug`     | You're stuck on a bug — reproduce, minimize, hypothesize, instrument, fix.          |
 | `skill-creator`   | You want to write a new Claude skill — guided creation, evaluation, and packaging.  |
 
 `skill-sdd`, `skill-to-prd`, `skill-grill-me`, and `skill-handoff` are user-invoked (`disable-model-invocation: true`). Call them by saying the skill name in chat or via `/<name>` if your client supports it. `skill-creator` is model-invocable — the agent will reach for it when you ask to build a skill.
@@ -36,6 +37,7 @@ All commands are prefixed with `action-` for easy discovery.
 | `/action-implement`    | Picks up the most recent `spec.md` / `prd.md` and implements it inside a fresh git worktree.  |
 | `/action-pr-ready`     | Strips noisy comments from new code, commits with a one-sentence message, pushes the branch.  |
 | `/action-code-review`  | Comprehensive review of the current branch's diff: quality, security, performance, docs.      |
+| `/action-cleanup`      | Lists stale worktrees, merged branches, and old spec/PRD files. Confirms before removing.     |
 
 ### Hook
 
