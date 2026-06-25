@@ -15,14 +15,15 @@ User-level — applies to every project on your machine.
 
 ### Skills
 
-| Skill      | When it fires                                                                 |
-|------------|-------------------------------------------------------------------------------|
-| `sdd`      | You want a spec before code. Produces a single `spec.md` in the repo.         |
-| `to-prd`   | You've already discussed a feature and want it written up as a PRD.           |
-| `grill-me` | You want a plan stress-tested before building.                                |
-| `handoff`  | You want to compact a conversation for a fresh agent to pick up.              |
+| Skill            | When it fires                                                                       |
+|------------------|-------------------------------------------------------------------------------------|
+| `sdd`            | You want a spec before code. Produces a single `spec.md` in the repo.               |
+| `to-prd`         | You've already discussed a feature and want it written up as a PRD.                 |
+| `grill-me`       | You want a plan stress-tested before building.                                      |
+| `handoff`        | You want to compact a conversation for a fresh agent to pick up.                    |
+| `skill-creator`  | You want to write a new Claude skill — guided creation, evaluation, and packaging.  |
 
-All skills are user-invoked (`disable-model-invocation: true`). Call them by saying the skill name in chat or via `/<name>` if your client supports it.
+`sdd`, `to-prd`, `grill-me`, and `handoff` are user-invoked (`disable-model-invocation: true`). Call them by saying the skill name in chat or via `/<name>` if your client supports it. `skill-creator` is model-invocable — the agent will reach for it when you ask to build a skill.
 
 ### Commands
 
@@ -45,8 +46,8 @@ Most files are short and editable. The two you'll probably touch first:
 
 ## Attribution
 
-`to-prd`, `grill-me`, and `handoff` are adapted from [mattpocock/skills](https://github.com/mattpocock/skills) under the MIT license. See `ATTRIBUTION.md`.
+`to-prd`, `grill-me`, and `handoff` are adapted from [mattpocock/skills](https://github.com/mattpocock/skills) under the MIT license. `skill-creator` is copied verbatim from [anthropics/skills](https://github.com/anthropics/skills) under Apache 2.0. See `ATTRIBUTION.md`.
 
 ## License
 
-MIT. See `LICENSE`.
+MIT for plugin code. The bundled `skills/skill-creator/` carries its own Apache 2.0 license. See `LICENSE` and `skills/skill-creator/LICENSE.txt`.

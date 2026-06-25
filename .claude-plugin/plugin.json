@@ -10,6 +10,7 @@
     "./skills/sdd",
     "./skills/to-prd",
     "./skills/grill-me",
-    "./skills/handoff"
+    "./skills/handoff",
+    "./skills/skill-creator"
   ]
 }

@@ -7,3 +7,9 @@ The following skills in this plugin are adapted from [mattpocock/skills](https:/
 - `skills/handoff/SKILL.md` — copied verbatim.
 
 The full MIT License text is included in `LICENSE`.
+
+## Anthropic — skill-creator
+
+`skills/skill-creator/` is copied verbatim from [anthropics/skills](https://github.com/anthropics/skills) (commit reference: `skills/skill-creator`), Copyright 2026 Anthropic, PBC. Licensed under the Apache License, Version 2.0. The full license text lives alongside the skill in `skills/skill-creator/LICENSE.txt`.
+
+No modifications have been made to the skill or its supporting files.
