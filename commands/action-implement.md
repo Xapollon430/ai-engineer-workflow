@@ -57,6 +57,26 @@ For each chunk:
 
 If you discover the spec was wrong or incomplete, update the spec in place. The spec is the living contract.
 
+### Code style: no narration comments
+
+Default to writing **zero comments**. Well-named identifiers already explain what the code does. Do not annotate lines, blocks, or functions with restatements of their behavior.
+
+Banned:
+
+- Line-above narration (`// fetch the user`, `# loop over items`, `// return result`).
+- Section headers inside functions (`// --- validation ---`).
+- Restating signatures in docstrings (`"""Returns the user."""` on `def get_user() -> User`).
+- TODOs/notes referencing the current task, spec, or PR ("added for the X flow", "per spec section 3.2").
+- Commented-out code.
+
+Allowed, sparingly — only when the **why** is non-obvious from the code:
+
+- A hidden constraint, invariant, or workaround for a specific bug.
+- Behavior that would surprise a careful reader.
+- A public API docstring when the project clearly uses them already.
+
+If you catch yourself writing a comment, ask: would removing this confuse a future reader who can read the code? If no, delete it before saving.
+
 ## 5. Hand off
 
 When all chunks are done:
