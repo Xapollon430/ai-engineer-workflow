@@ -7,7 +7,7 @@ disable-model-invocation: true
 
 <!-- Adapted from mattpocock/skills (MIT). See ATTRIBUTION.md. -->
 
-Write a handoff document summarising the current conversation so a fresh agent can continue the work. Save to the temporary directory of the user's OS — not the current workspace.
+Write a handoff document summarising the current conversation so a fresh agent can continue the work. Save to `handoff.md` at the repo root, unless a `docs/` directory exists, in which case use `docs/handoff.md`.
 
 Include a "suggested skills" section in the document, which suggests skills that the agent should invoke.
 

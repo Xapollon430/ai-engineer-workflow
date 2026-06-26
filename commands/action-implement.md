@@ -4,6 +4,8 @@ description: Pick up the most recent spec or PRD and drive implementation in an 
 
 You are about to implement a written spec. Work in a fresh git worktree so the user's main checkout stays clean.
 
+If the current branch is not `main`/`master`, there may be in-progress work. Before doing anything else, check `git diff --stat main...HEAD` and read any `docs/handoff.md` to understand what's already been done.
+
 ## 1. Find the spec
 
 Look for, in order:

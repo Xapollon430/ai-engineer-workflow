@@ -36,6 +36,10 @@ For each, report:
 - Whether a git branch with a matching slug exists.
 - Mark **stale** if last modified > 30 days **and** no matching branch exists.
 
+### Handoff file
+
+Find `handoff.md` at the repo root or `docs/handoff.md`. Report last modified date. Mark **stale** if last modified > 3 days — handoffs are meant to be consumed by the next session, not kept around.
+
 ## 2. Present
 
 Print one table with all candidates. Columns:
@@ -68,6 +72,7 @@ For each confirmed item:
 - **Worktree:** `git worktree remove <path>`. Do not use `--force` unless the user types it themselves.
 - **Branch:** `git branch -d <name>`. Refuse `-D` unless the user explicitly requests it (it can drop unmerged work).
 - **Spec / PRD file:** confirm with the user that the work it described actually shipped, then `rm <path>`. Do not auto-commit the removal — leave that to the user.
+- **Handoff file:** `rm <path>`. No extra confirmation needed beyond the step 3 approval.
 
 If a removal fails, report the failure verbatim and stop. Do not retry with stronger flags.
 

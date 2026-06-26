@@ -21,12 +21,13 @@ All skills are prefixed with `skill-` for easy discovery.
 |-------------------|-------------------------------------------------------------------------------------|
 | `skill-sdd`       | You want a spec before code. Produces a single `spec.md` in the repo.               |
 | `skill-to-prd`    | You've already discussed a feature and want it written up as a PRD.                 |
+| `skill-to-issues` | You have a PRD or spec and want it broken into vertical-slice issue files.          |
 | `skill-grill-me`  | You want a plan stress-tested before building.                                      |
 | `skill-handoff`   | You want to compact a conversation for a fresh agent to pick up.                    |
 | `skill-debug`     | You're stuck on a bug — reproduce, minimize, hypothesize, instrument, fix.          |
 | `skill-creator`   | You want to write a new Claude skill — guided creation, evaluation, and packaging.  |
 
-`skill-sdd`, `skill-to-prd`, `skill-grill-me`, and `skill-handoff` are user-invoked (`disable-model-invocation: true`). Call them by saying the skill name in chat or via `/<name>` if your client supports it. `skill-creator` is model-invocable — the agent will reach for it when you ask to build a skill.
+`skill-sdd`, `skill-to-prd`, `skill-to-issues`, `skill-grill-me`, and `skill-handoff` are user-invoked (`disable-model-invocation: true`). Call them by saying the skill name in chat or via `/<name>` if your client supports it. `skill-creator` is model-invocable — the agent will reach for it when you ask to build a skill.
 
 ### Commands
 
@@ -51,7 +52,7 @@ Most files are short and editable. The one you'll probably touch first:
 
 ## Attribution
 
-`skill-to-prd`, `skill-grill-me`, and `skill-handoff` are adapted from [mattpocock/skills](https://github.com/mattpocock/skills) under the MIT license. `skill-creator` is copied verbatim from [anthropics/skills](https://github.com/anthropics/skills) under Apache 2.0. `action-code-review` is adapted from [anthropics/claude-code-action](https://github.com/anthropics/claude-code-action) under MIT. See `ATTRIBUTION.md`.
+`skill-to-prd`, `skill-to-issues`, `skill-grill-me`, and `skill-handoff` are adapted from [mattpocock/skills](https://github.com/mattpocock/skills) under the MIT license. `skill-creator` is copied verbatim from [anthropics/skills](https://github.com/anthropics/skills) under Apache 2.0. `action-code-review` is adapted from [anthropics/claude-code-action](https://github.com/anthropics/claude-code-action) under MIT. See `ATTRIBUTION.md`.
 
 ## License
 
