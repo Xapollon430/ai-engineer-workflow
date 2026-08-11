@@ -7,6 +7,7 @@ Short, opinionated defaults for this workflow.
 - **WezTerm** for the terminal: fast, scriptable, good font/rendering support.
 - **herdr** for local dev orchestration when a project needs repeatable background services.
 - **pi agent** for coding-agent work in the terminal.
+- **LLM Wiki** for source-grounded personal knowledge: immutable raw inputs, maintained Markdown pages, and an append-only activity log.
 
 ## WezTerm
 
@@ -72,6 +73,27 @@ stop    # stop project services
 logs    # tail the useful logs
 reset   # reset local state only when intentionally requested
 ```
+
+## LLM Wiki
+
+Keep a local wiki at `~/Desktop/wiki` for durable knowledge the agent can maintain.
+
+```text
+raw/              # immutable source files
+wiki/sources/     # one summary page per ingested source
+wiki/concepts/    # durable ideas and methods
+wiki/entities/    # people, orgs, products, places
+wiki/syntheses/   # cross-source answers
+index.md          # catalog
+log.md            # append-only activity history
+```
+
+Rules:
+
+- Read `AGENTS.md` before changing the wiki.
+- Never edit `raw/`; derived wiki pages can evolve.
+- Keep claims traceable to source pages or raw files.
+- Update `index.md` and append to `log.md` after meaningful changes.
 
 ## Defaults
 
