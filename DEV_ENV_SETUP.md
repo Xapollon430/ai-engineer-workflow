@@ -9,24 +9,11 @@ Short, opinionated defaults for this workflow.
 - **pi agent** for coding-agent work in the terminal.
 - **LLM Wiki** for source-grounded personal knowledge: immutable raw inputs, maintained Markdown pages, and an append-only activity log.
 
-## WezTerm
+## WezTerm + Hammerspoon
 
-Keep it boring: readable font, sane scrollback, no distracting chrome.
+Keep it boring: readable font, sane scrollback, no distracting chrome. Use Hammerspoon for the global WezTerm toggle (`Cmd+\``).
 
-```lua
--- ~/.wezterm.lua
-local wezterm = require("wezterm")
-
-return {
-  color_scheme = "Catppuccin Mocha",
-  font = wezterm.font("JetBrains Mono"),
-  font_size = 13.0,
-  window_decorations = "RESIZE",
-  hide_tab_bar_if_only_one_tab = true,
-  scrollback_lines = 10000,
-  enable_kitty_keyboard = true,
-}
-```
+Full configs live in [`TERMINAL_CONFIGS.md`](TERMINAL_CONFIGS.md).
 
 ## pi agent
 
